@@ -1,0 +1,302 @@
+@font-face {
+	font-family: LeagueSpartanBold;
+	src: url(../fonts/LeagueSpartan-Bold.otf);
+}
+
+@font-face {
+	font-family: HKGroteskLight;
+	src: url(../fonts/HKGrotesk-Light.otf);
+}
+
+/* загальні налаштування */
+body {
+	font-family: HKGroteskLight, sans-serif;
+	color: #92a1a9;
+}
+
+/* фон */
+.main_layer {
+	min-width: 1180px;
+	height: 2600px;
+	background: #272f45;
+	margin: auto;
+}
+
+.main_layer a {
+	text-decoration: none;
+}
+
+/* робоча область */
+.work_layer,
+.footer {
+	width: 1160px;
+	margin: auto;
+}
+
+.work_layer h2 {
+	margin: 0;
+	padding: 0;
+	font-family: LeagueSpartanBold, sans-serif;
+	text-transform: uppercase;
+}
+
+.work_layer a {
+	color: #fff;
+}
+
+.main_header,
+.products {
+	width: inherit;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* заголовок */
+.main_header {
+	height: 188px;
+	align-items: center;
+}
+
+.search {
+	border-bottom: 3px solid #63757e;
+}
+
+.input_search {
+	border: 0;
+	width: 145px;
+	background: #272f45;
+	color: #92a1a9;
+	font-family: HKGroteskLight, sans-serif;
+	font-size: 24px;
+	position: relative;
+	top: -4px;
+}
+
+.input_search::placeholder {
+	color: #92a1a9;
+}
+
+.input_search:focus {
+	outline: 0;
+}
+
+/* кнопки */
+.button {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.button_bigger {
+	border: 3px solid #eec9a2;
+	height: 54px;
+	width: 154px;
+	font-size: 24px;
+}
+
+.button_smaller {
+	border: 3px solid #eec9a2;
+	height: 42px;
+	width: 114px;
+	font-family: LeagueSpartanBold, sans-serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/* продукти */
+.product_main {
+	width: inherit;
+	height: 690px;
+	background: url(../img/gina-product.png) no-repeat #a5b5bd;
+	display: flex;
+	justify-content: space-between;
+}
+
+.product_main h2 {
+	font-size: 80px;
+}
+
+.product_main_layout {
+	margin: 110px 0 0 60px;
+}
+
+.product_main_about {
+	width: 370px;
+	font-size: 32px;
+	letter-spacing: 0.5px;
+	line-height: 1.2;
+	margin: 22px 0 135px 2px;
+}
+
+.product_badge {
+	position: relative;
+	top: 37px;
+	left: 57px;
+}
+
+.product_badge-logo {
+	position: relative;
+	bottom: 3px;
+	left: -46px;
+}
+
+.product {
+	height: 520px;
+	width: 560px;
+	overflow: hidden;
+	margin: 40px 0;
+}
+
+.product h2 {
+	font-size: 48px;
+}
+
+.product:nth-child(2) {
+	background: url(../img/beoplay-a1-product.png) 92% 29% no-repeat #60b8a3;
+}
+
+.product:nth-child(3) {
+	background: url(../img/leica-mp-product.png) 138px 240px no-repeat #7778c6;
+}
+
+.product_layout_right {
+	margin: 62px 30px 0 0;
+	text-align: right;
+}
+
+.product_layout_left {
+	margin: 62px 0 0 30px;
+}
+
+.product_about {
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	line-height: 1.22;
+	margin: 10px 0 60px 0;
+}
+
+.product_last {
+	height: 440px;
+	width: 360px;
+	overflow: hidden;
+	margin-bottom: 150px;
+}
+
+.product_last h2 {
+	font-size: 36px;
+	margin: 15px 0 24px;
+}
+
+.product_last:nth-child(4) {
+	background: url(../img/molekule-product.png) -20px 254px no-repeat #e97864;
+}
+
+.product_last:nth-child(5) {
+	background: url(../img/p9-signature-product.png) -323px -156px no-repeat #557581;
+}
+
+.product_last:nth-child(6) {
+	background: url(../img/dr-II-product.png) 30px 245px no-repeat #82c9d8;
+}
+
+.product_layout_center-top {
+	margin: 67px 0 0;
+	text-align: center;
+}
+
+.product_layout_center-bottom {
+	margin: 262px 0 0;
+	text-align: center;
+}
+
+.product_last_about {
+	font-size: 16px;
+	letter-spacing: 0.3px;
+}
+
+/* форма підписки */
+.subscribe {
+	text-align: center;
+}
+
+.form_header {
+	font-size: 36px;
+	letter-spacing: 0.5px;
+}
+
+.form_about {
+	font-size: 18px;
+	letter-spacing: 0.2px;
+	padding: 15px 0 50px 0;
+	margin: 0 auto;
+}
+
+.form_layout {
+	margin: 0 auto 100px;
+	text-align: center;
+}
+
+.input_email {
+	height: 52px;
+	width: 354px;
+	border: 3px solid #63757e;
+	background: #272f45;
+	font-family: HKGroteskLight, sans-serif;
+	font-size: 24px;
+	letter-spacing: 0.5px;
+	color: #92a1a9;
+	text-align: center;
+}
+
+.input_email::placeholder {
+	color: #92a1a9;
+}
+
+.button_form {
+	margin-top: 20px;
+	border: 3px solid #82c9d8;
+	background: #272f45;
+	color: #fff;
+	font-family: LeagueSpartanBold, sans-serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+	height: 60px;
+	width: 360px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* футер */
+.menu_bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+.menu_bottom a {
+	color: #92a1a9;
+}
+
+.menu_bottom a:hover {
+	color: #fff;
+}
+
+.menu_bottom div {
+	height: 1px;
+	width: 1px;	
+	border: 2px solid #92a1a9;
+	border-radius: 3px;
+	background: #92a1a9;
+	margin: 0 15px;
+}
+
+.footer {
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+}
